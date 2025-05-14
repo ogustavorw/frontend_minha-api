@@ -1,0 +1,26 @@
+<p>edicao works!</p>
+
+<form (ngSubmit)="salvar()">
+    <div>
+        <label>Modelo: </label>
+        <input name="Modelo" [(ngModel)]="vendecarro.model">
+    </div>
+    <div>
+        <label>Marca: </label>
+        <input name="Marca" [(ngModel)]="vendecarro.brand">
+    </div>
+    <div>
+        <label>Ano de fabricacao: </label>
+        <input name="Ano de fabricacao" type="number" [(ngModel)]="vendecarro.manufactureYear">
+    </div>
+    <div>
+        <label>Motor: </label>
+        <input name="Motor" [(ngModel)]="vendecarro.engine">
+    </div>
+    <div>
+        <label>Potência (cavalos): </label>
+        <input name="Potência (cavalos)" type="number" [(ngModel)]="vendecarro.horsepower">
+    </div>
+
+    <button type="submit">Salvar</button>
+</form>

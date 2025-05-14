@@ -1,0 +1,27 @@
+<p>listagem works!</p>
+
+<a routerLink="/cadastro">Novo Cadastro</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>brand</th>
+            <th>model</th>
+            <th>manufactureYear</th>
+            <th>engine</th>
+            <th>horsepower</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vendecarro of vendecarro">
+            <td>{{vendecarro.brand}}</td>
+            <td>{{vendecarro.model}}</td>
+            <td>{{vendecarro.manufactureYear}}</td>
+            <td>{{vendecarro.engine}}</td>
+            <td>{{vendecarro.horsepower}}</td>
+            <td>
+                <a [routerLink]="['/edicao', vendecarro.id ]">Editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
