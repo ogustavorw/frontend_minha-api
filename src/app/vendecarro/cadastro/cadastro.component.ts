@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class CadastroComponent {
   vendecarro: vendecarro = {
+    id: 0,
     manufactureYear: 0,
     horsepower: 0,
     model: '',

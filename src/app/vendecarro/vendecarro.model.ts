@@ -1,4 +1,5 @@
 export interface vendecarro {
+  id: number; //id do carro
   manufactureYear: number; // Ano de fabricação do carro
   horsepower: number; // potência do motor em cavalos (hp)
   brand: string; // Marca do carro

@@ -14,6 +14,7 @@ import { vendecarro } from '../vendecarro.model';
 
 export class EdicaoComponent implements OnInit {
   vendecarro: vendecarro = {
+    id: 0,
     model: '',
     brand: '',
     manufactureYear: 0,
@@ -30,6 +31,7 @@ export class EdicaoComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.carregarVendecarro();
   }
 
   carregarVendecarro(): void {
