@@ -1,1 +1,41 @@
-<p>cadastro works!</p>
+<div class="form-container">
+    <form (ngSubmit)="salvar()">
+        <!-- Modelo -->
+        <div class="mb-3">
+            <label for="modeloInput" class="form-label">Modelo:</label>
+            <input type="text" class="form-control input-width" id="modeloInput" name="Modelo"
+                [(ngModel)]="vendecarro.model" placeholder="Digite o modelo do veículo">
+        </div>
+
+        <!-- Marca -->
+        <div class="mb-3">
+            <label for="marcaInput" class="form-label">Marca:</label>
+            <input type="text" class="form-control input-width" id="marcaInput" name="Marca"
+                [(ngModel)]="vendecarro.brand" placeholder="Digite a marca do veículo">
+        </div>
+
+        <!-- Ano de Fabricação -->
+        <div class="mb-3">
+            <label for="anoFabricacaoInput" class="form-label">Ano de fabricação:</label>
+            <input type="number" class="form-control input-width" id="anoFabricacaoInput" name="Ano de fabricacao"
+                [(ngModel)]="vendecarro.manufactureYear" placeholder="Digite o ano de fabricação">
+        </div>
+
+        <!-- Motor -->
+        <div class="mb-3">
+            <label for="motorInput" class="form-label">Motor:</label>
+            <input type="text" class="form-control input-width" id="motorInput" name="Motor"
+                [(ngModel)]="vendecarro.engine" placeholder="Digite o motor do veículo">
+        </div>
+
+        <!-- Potência -->
+        <div class="mb-3">
+            <label for="potenciaInput" class="form-label">Potência (cavalos):</label>
+            <input type="number" class="form-control input-width" id="potenciaInput" name="Potência (cavalos)"
+                [(ngModel)]="vendecarro.horsepower" placeholder="Digite a potência do veículo">
+        </div>
+
+        <!-- Botão de Submit -->
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</div>
