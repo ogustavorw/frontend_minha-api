@@ -1,3 +1,8 @@
+/* Define o espaçamento lateral */
+.form-container {
+  margin: 0.5rem; /* Espaço de 2rem nas laterais */
+}
+
 /* Reduzindo o espaçamento interno das colunas */
 .col-sm-2 {
   padding: auto ; /* Ajuste este valor conforme necessário */

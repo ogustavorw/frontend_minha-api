@@ -1,27 +1,27 @@
-<p>listagem works!</p>
+<div class="form-container">
+  <a routerLink="/cadastro" class="btn btn-primary mb-3">Novo Cadastro</a>
 
-<a routerLink="/cadastro" class="btn btn-primary mb-3">Novo Cadastro</a>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <div class="row text-center fw-bold mb-2">
+      <div class="col-sm-2">brand</div>
+      <div class="col-sm-2">Model</div>
+      <div class="col-sm-2">manufactureYear</div>
+      <div class="col-sm-2">engine</div>
+      <div class="col-sm-2">horsepower</div>
+      <div class="col-sm-2">Actions</div>
+    </div>
 
-<div class="container">
-  <!-- Cabeçalho -->
-  <div class="row text-center fw-bold mb-2">
-    <div class="col-sm-2">brand</div>
-    <div class="col-sm-2">Model</div>
-    <div class="col-sm-2">manufactureYear</div>
-    <div class="col-sm-2">engine</div>
-    <div class="col-sm-2">horsepower</div>
-    <div class="col-sm-2">Actions</div>
-  </div>
-
-  <!-- Corpo da tabela -->
-  <div *ngFor="let vendecarro of vendecarro" class="row align-items-center text-center mb-2">
-    <div class="col-sm-2">{{vendecarro.brand}}</div>
-    <div class="col-sm-2">{{vendecarro.model}}</div>
-    <div class="col-sm-2">{{vendecarro.manufactureYear}}</div>
-    <div class="col-sm-2">{{vendecarro.engine}}</div>
-    <div class="col-sm-2">{{vendecarro.horsepower}}</div>
-    <div class="col-sm-2">
-      <a [routerLink]="['/edicao', vendecarro.id]" class="btn btn-sm btn-outline-primary">Edit</a>
+    <!-- Corpo da tabela -->
+    <div *ngFor="let vendecarro of vendecarro" class="row align-items-center text-center mb-2">
+      <div class="col-sm-2">{{vendecarro.brand}}</div>
+      <div class="col-sm-2">{{vendecarro.model}}</div>
+      <div class="col-sm-2">{{vendecarro.manufactureYear}}</div>
+      <div class="col-sm-2">{{vendecarro.engine}}</div>
+      <div class="col-sm-2">{{vendecarro.horsepower}}</div>
+      <div class="col-sm-2">
+        <a [routerLink]="['/edicao', vendecarro.id]" class="btn btn-sm btn-outline-primary">Edit</a>
+      </div>
     </div>
   </div>
 </div>
