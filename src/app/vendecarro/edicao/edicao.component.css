@@ -3,6 +3,11 @@
   width: 20%; /* Largura fixa de 30% */
 }
 
+/* Define o espaçamento lateral */
+.form-container {
+  margin: 0.5rem; /* Espaço de 2rem nas laterais */
+}
+
 /* Centraliza horizontalmente os campos */
 .form-group {
   display: flex;
