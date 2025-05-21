@@ -1,0 +1,11 @@
+/* Define a largura dos inputs para 30% */
+.input-width {
+  width: 20%; /* Largura fixa de 30% */
+}
+
+/* Centraliza horizontalmente os campos */
+.form-group {
+  display: flex;
+  justify-content: center; /* Centraliza os campos na linha */
+  align-items: center;
+}
